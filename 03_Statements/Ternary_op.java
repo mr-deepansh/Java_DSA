@@ -13,5 +13,8 @@ public class Ternary_op {
     String result = (number % 2 == 0) ? "Even" : "Odd";
     System.out.println("The number is " + result);
 
+    int mark = 43;
+    String grade = (mark >= 33) ? "Pass" : "Fail";
+    System.out.println("The student is " + grade);
   }
 }
