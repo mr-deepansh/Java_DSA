@@ -27,15 +27,28 @@ public class While_loop {
     // }
 
     // fourth example
+    // Scanner input = new Scanner(System.in);
+    // System.out.print("Enter a number: ");
+    // int n = input.nextInt();
+    // int sum = 0;
+    // int i = 1;
+    // while (i <= n) {
+    // sum = sum + i;
+    // i++;
+    // }
+    // System.out.println("Sum is: " + sum);
+
+    // fifth example
+
     Scanner input = new Scanner(System.in);
     System.out.print("Enter a number: ");
     int n = input.nextInt();
-    int sum = 0;
-    int i = 1;
-    while (i <= n) {
-      sum = sum + i;
-      i++;
+
+    while (n > 0) {
+      int lastDigit = n % 10;
+      n = n / 10;
+      System.out.print(lastDigit);
+
     }
-    System.out.println("Sum is: " + sum);
   }
 }
