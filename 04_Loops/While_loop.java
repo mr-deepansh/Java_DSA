@@ -17,14 +17,25 @@ public class While_loop {
 
     // third example
 
+    // Scanner input = new Scanner(System.in);
+    // System.out.print("Enter a number: ");
+    // int number = 1;
+    // int n = input.nextInt();
+    // while (number <= n) {
+    // System.out.println(number);
+    // number++;
+    // }
+
+    // fourth example
     Scanner input = new Scanner(System.in);
     System.out.print("Enter a number: ");
-    int number = 1;
     int n = input.nextInt();
-    while (number <= n) {
-      System.out.println(number);
-      number++;
-
+    int sum = 0;
+    int i = 1;
+    while (i <= n) {
+      sum = sum + i;
+      i++;
     }
+    System.out.println("Sum is: " + sum);
   }
 }
