@@ -40,15 +40,25 @@ public class While_loop {
 
     // fifth example
 
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter a number: ");
-    int n = input.nextInt();
+    // Scanner input = new Scanner(System.in);
+    // System.out.print("Enter a number: ");
+    // int n = input.nextInt();
+
+    // while (n > 0) {
+    // int lastDigit = n % 10;
+    // n = n / 10;
+    // System.out.print(lastDigit);
+    // }
+
+    // sixth example
+    int n = 10899;
+    int rev = 0;
 
     while (n > 0) {
       int lastDigit = n % 10;
+      rev = (rev * 10) + lastDigit;
       n = n / 10;
-      System.out.print(lastDigit);
-
     }
+    System.out.println(rev);
   }
 }
