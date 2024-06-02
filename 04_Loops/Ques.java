@@ -14,7 +14,7 @@ public class Ques {
     // } while (true);
 
     while (true) {
-      System.out.println("Enter a number: ");
+      System.out.print("Enter a number: ");
       if (sc.nextInt() % 10 == 0) {
         break;
       }
