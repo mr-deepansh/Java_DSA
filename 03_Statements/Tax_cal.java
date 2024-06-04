@@ -7,6 +7,7 @@ public class Tax_cal {
     System.out.print("Enter your income :");
 
     int income = scanner.nextInt();
+    scanner.close();
     int tax;
     if (income < 500000) {
       tax = 0;

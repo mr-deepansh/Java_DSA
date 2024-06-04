@@ -15,6 +15,8 @@ public class Do_while {
     // System.out.print("Enter a number: ");
     // int number = 1;
     // int n = input.nextInt();
+    // input.close();
+
     // do {
     // System.out.println(number);
     // number++;
@@ -25,6 +27,7 @@ public class Do_while {
     Scanner input = new Scanner(System.in);
     System.out.print("Enter a number: ");
     int n = input.nextInt();
+    input.close();
     int sum = 0;
     int i = 1;
     do {

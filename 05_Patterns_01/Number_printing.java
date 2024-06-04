@@ -12,5 +12,6 @@ public class Number_printing {
       }
       System.out.println();
     }
+    sc.close();
   }
 }

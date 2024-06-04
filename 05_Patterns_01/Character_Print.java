@@ -12,6 +12,7 @@ public class Character_Print {
         System.out.print(ch + " ");
         ch++;
       }
+      sc.close();
       System.out.println();
     }
   }

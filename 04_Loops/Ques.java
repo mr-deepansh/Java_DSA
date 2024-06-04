@@ -19,6 +19,7 @@ public class Ques {
         break;
       }
     }
+    sc.close();
   }
 }
 
@@ -36,5 +37,6 @@ public class Ques {
 // }
 // System.out.println(n);
 // } while (true);
+// sc.close();
 // }
 // }

@@ -20,5 +20,6 @@ public class Star_Pattern {
       }
       System.out.println();
     }
+    sc.close();
   }
 }
