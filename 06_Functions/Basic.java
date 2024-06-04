@@ -20,18 +20,20 @@ public class Basic {
   // }
   // ? 2nd way parameterize the function
   public static void main(String[] args) {
+    // ! This is a main function
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter A number: ");
     int a = sc.nextInt();
     System.out.print("Enter B number: ");
     int b = sc.nextInt();
     sc.close();
-    multiply(a, b);
+    int result = multiply(a, b);
+    System.out.println("The product is: " + result);
   }
 
-  public static void multiply(int a, int b) {
+  public static int multiply(int a, int b) {
     int multiple = a * b;
-    System.out.println("multiple is: " + multiple);
+    return multiple;
   }
 
 }
