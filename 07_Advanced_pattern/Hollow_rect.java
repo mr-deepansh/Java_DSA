@@ -35,9 +35,19 @@ public class Hollow_rect {
     }
   }
 
+  public static void Number_Pyramid(int n) {
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= n - i + 1; j++) {
+        System.out.print(j + " ");
+      }
+      System.out.println();
+    }
+  }
+
   public static void main(String[] args) {
     // pattern(7, 5);
-    Half_Pyramid(5);
+    // Half_Pyramid(5);
+    Number_Pyramid(8);
   }
 
 }
