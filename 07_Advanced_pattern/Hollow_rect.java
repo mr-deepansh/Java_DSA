@@ -44,10 +44,22 @@ public class Hollow_rect {
     }
   }
 
+  public static void floyds_triangle(int n) {
+    int counter = 1;
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print(counter + " ");
+        counter++;
+      }
+      System.out.println();
+    }
+  }
+
   public static void main(String[] args) {
     // pattern(7, 5);
     // Half_Pyramid(5);
-    Number_Pyramid(8);
+    // Number_Pyramid(8);
+    // floyds_triangle(5);
   }
 
 }
