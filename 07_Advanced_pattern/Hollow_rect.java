@@ -68,12 +68,52 @@ public class Hollow_rect {
     }
   }
 
+  public static void Butterfly_Pattern(int n) {
+
+    // Case First
+
+    for (int j = 1; j <= n; j++) {
+      for (int i = 1; i <= n; i++) {
+        if (i <= j) {
+          System.out.print("*");
+        } else {
+          System.out.print(" ");
+        }
+      }
+      for (int i = n; i >= 1; i--) {
+        if (i <= j) {
+          System.out.print("*");
+        } else {
+          System.out.print(" ");
+        }
+      }
+      System.out.println();
+    }
+
+    // Case Second
+
+    for (int i = n; i >= 1; i--) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print("*");
+      }
+      for (int j = 1; j <= 2 * (n - i); j++) {
+        System.out.print(" ");
+      }
+      for (int j = 1; j <= i; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+
+  }
+
   public static void main(String[] args) {
     // pattern(7, 5);
     // Half_Pyramid(5);
     // Number_Pyramid(8);
     // floyds_triangle(5);
-    zero_one_triangle(5);
+    // zero_one_triangle(5);
+    // Butterfly_Pattern(4);
   }
 
 }
