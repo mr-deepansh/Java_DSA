@@ -19,6 +19,7 @@ public class Input_arrays {
     System.out.println("Your Physics Subject marks is " + marks[1]);
     System.out.println("Your Chemistry Subject marks is " + marks[2]);
     sc.close();
+    System.out.println();
 
     // percentage calculation
     int percentage = (marks[0] + marks[1] + marks[2]) / 3;
