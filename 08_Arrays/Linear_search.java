@@ -16,6 +16,7 @@ public class Linear_search {
     } else {
       System.out.println("The key is found at index " + index);
     }
+    sc.close();
   }
 
   public static int linearSearch(int number[], int key) {
