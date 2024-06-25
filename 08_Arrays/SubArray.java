@@ -16,13 +16,16 @@ public class SubArray {
       int start = i;
       for (int j = i; j < numbers.length; j++) {
         int end = j;
+        int sum = 0;
         for (int k = start; k <= end; k++) {
           System.out.print(numbers[k] + " ");
+          sum += numbers[k];
         }
         ts++;
+        System.out.println("-> sum = " + sum);
         System.out.println();
       }
-      System.out.println();
+      // System.out.println();
     }
     System.out.println("totel subarray's = " + ts);
   }
