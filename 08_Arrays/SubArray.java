@@ -8,8 +8,6 @@ public class SubArray {
     PrintSubArrays(numbers);
   }
 
-  // TODO: subarrays ka some bhi nikalna hai arrays by array
-
   public static void PrintSubArrays(int numbers[]) {
     int ts = 0;
     for (int i = 0; i < numbers.length; i++) {
@@ -22,11 +20,11 @@ public class SubArray {
           sum += numbers[k];
         }
         ts++;
-        System.out.println("-> sum = " + sum);
+        System.out.print("-> sum = " + sum);
         System.out.println();
       }
       // System.out.println();
     }
-    System.out.println("totel subarray's = " + ts);
+    System.out.println("total subArray = " + ts);
   }
 }
