@@ -5,26 +5,25 @@ public class SubArray {
 
   public static void main(String[] args) {
     int numbers[] = { 2, 4, 6, 8, 10, 14 };
-    PrintSubArrays(numbers);
+    printSubArrays(numbers);
   }
 
-  public static void PrintSubArrays(int numbers[]) {
-    int ts = 0;
-    for (int i = 0; i < numbers.length; i++) {
-      int start = i;
-      for (int j = i; j < numbers.length; j++) {
-        int end = j;
+  public static void printSubArrays(int[] numbers) {
+    int totalSubArrays = 0;
+    for (int start = 0; start < numbers.length; start++) { // Outer Loop
+      for (int end = start; end < numbers.length; end++) { // inner Loop
         int sum = 0;
-        for (int k = start; k <= end; k++) {
-          System.out.print(numbers[k] + " ");
+        System.out.print("subArrays: [ ");
+        for (int k = start; k <= end; k++) { // Innermost Loop
+          System.out.print(numbers[k] + " "); // SubArray
           sum += numbers[k];
         }
-        ts++;
-        System.out.print("-> sum = " + sum);
+        totalSubArrays++;
+        System.out.print("] => Sum = " + sum);
         System.out.println();
       }
-      // System.out.println();
+      System.out.println();
     }
-    System.out.println("total subArray = " + ts);
+    System.out.println("Total subArrays = " + totalSubArrays);
   }
 }
