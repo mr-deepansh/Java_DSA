@@ -1,8 +1,8 @@
 public class kadanesAlo {
   public static void main(String[] args) {
-    int[] arr1 = { 1, 2, 3, -2, 5 };
-    int[] arr2 = { 1, -2, 6, -1, 3 };
-    int[] arr3 = { -1, -2, -3, -4, -5 };
+    int[] arr1 = {1, 2, 3, -2, 5};
+    int[] arr2 = {1, -2, 6, -1, 3};
+    int[] arr3 = {-1, -2, -3, -4, -5};
 
     System.out.println("Max sum for arr1: " + arraySum(arr1));
     System.out.println("Max sum for arr2: " + arraySum(arr2));
