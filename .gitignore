@@ -1,0 +1,15 @@
+# Ignore Java bin folder
+bin/
+
+# Ignore .vscode folder (VS Code settings)
+.vscode/
+
+# Ignore .idea folder (IDE settings like IntelliJ or Android Studio)
+.idea/
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore additional folders (add any other folder names you want)
+folder_name_1/
+folder_name_2/
